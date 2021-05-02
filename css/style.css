@@ -1,0 +1,190 @@
+/* Custom Stylesheet */
+/**
+ * Use this file to override Materialize files so you can update
+ * the core Materialize files in the future
+ *
+ * Made By MaterializeCSS.com
+ */
+
+ html {
+  scroll-behavior: smooth;
+ }
+
+ .carousel {
+ height: auto !important;
+ padding:5%;
+ }
+
+.carousel-cell {
+  width: 66%;
+  height:250px;
+  margin-right: 10px;
+  background: #fff;
+  border-radius: 5px;
+  counter-increment: carousel-cell;
+  padding: 5%;
+  -webkit-box-shadow: -11px -2px 53px -25px rgba(0,0,0,0.75);
+  -moz-box-shadow: -11px -2px 53px -25px rgba(0,0,0,0.75);
+  box-shadow: -11px -2px 53px -25px rgba(0,0,0,0.75);
+
+}
+
+.cliente a {
+  font-weight: bold;
+  font-size:18px;
+  color: #ef5350;
+}
+
+.cliente a:hover {
+  color: teal;
+}
+
+/* cell number 
+.carousel-cell:before {
+  display: block;
+  text-align: center;
+  content: counter(carousel-cell);
+  line-height: 200px;
+  font-size: 80px;
+  color: #000;
+}*/
+
+nav ul a,
+nav .brand-logo {
+  color: #444;
+}
+
+
+iframe {
+  margin-top: 40px;
+}
+
+.btn-large {
+ border-radius: 50px !important;
+ font-size: 21px !important;
+ background-color: #ef5350;
+}
+
+.btn {
+  border-radius:50px !important;
+}
+
+.sobre-nos, .caracteristicas, .diferenciais, .depoimentos {
+  padding-top: 20px;
+  padding-bottom: 30px;
+}
+
+.card-content {
+  font-size: 14px;
+}
+
+.card-title {
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 21px !important;
+}
+.caracteristicas {
+  background-image: url('/img/stockbackground.jpg');
+  background-size: cover;
+}
+ .page-footer {
+   background-color: #000000;
+ }
+
+.sidenav-trigger {
+  color: #26a69a;
+}
+
+.parallax-container {
+  min-height: 80vh;
+  line-height: 0;
+  height: auto;
+  color: rgba(255,255,255,.9);
+}
+.parallax-container .section {
+  width: 100%;
+}
+
+.preço { 
+  width: 300px;
+  border-radius: 25px;
+  margin: auto;
+}
+
+.headerpreço {
+  background-color: black;
+  color: white;
+  border-top-right-radius: 25px;
+  border-top-left-radius: 25px;
+  padding:.5%;
+}
+
+#selo {
+  margin-right: -100%;
+  margin-top:-10%;
+}
+
+.depoimentos {
+  background-color: #ef5350;
+}
+.redes-sociais {
+      /* filter: url(filters.svg#grayscale); Firefox 3.5+ */
+      filter: gray; /* IE5+ */
+      -webkit-filter: grayscale(1); /* Webkit Nightlies & Chrome Canary */
+      -webkit-transition: all .5s ease-in-out; 
+}
+
+.redes-sociais:hover {
+  filter: none;
+  -webkit-filter: grayscale(0);
+}
+
+@media only screen and (max-width : 992px) {
+  .parallax-container .section {
+    position: absolute;
+    top: 40%;
+  }
+  #index-banner .section {
+    top: 10%;
+  }
+}
+
+@media only screen and (max-width : 600px) {
+
+  #selo {
+    margin-right: -80%;
+    width: 120px;
+  }
+  #index-banner .section {
+    top: 0;
+  }
+
+  #logo-footer{
+    width:100% !important;
+  }
+
+  .parallax-container{
+    height: 100vh;
+  }
+
+  iframe {
+    width: 100% !important;
+    height: auto !important;
+    margin-top: 25px;
+  }
+
+  .preço {
+    width:100% !important;
+  }
+}
+
+.icon-block {
+  padding: 0 15px;
+}
+.icon-block .material-icons {
+  font-size: inherit;
+}
+
+footer.page-footer {
+  margin: 0;
+}
